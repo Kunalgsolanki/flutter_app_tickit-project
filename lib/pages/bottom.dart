@@ -1,3 +1,4 @@
+import 'package:app_kgs/pages/home_page.dart';
 import 'package:fluentui_icons/fluentui_icons.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +12,7 @@ class bottombar extends StatefulWidget {
 class _bottombarState extends State<bottombar> {
   int _selectedIndex = 0;
   static final List<Widget> _widget = <Widget>[
-    const Text("Home"),
+    HomePage(),
     const Text("Search"),
     const Text("Tickits"),
     const Text(" Profile"),
@@ -28,14 +29,8 @@ class _bottombarState extends State<bottombar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Center(
-            child: Text("Tickit App",
-                style: TextStyle(
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                    color: Colors.white))),
-      ),
+      
+     
       body: Center(
         child: _widget[_selectedIndex],
       ),
@@ -47,6 +42,7 @@ class _bottombarState extends State<bottombar> {
           elevation: 10,
           showSelectedLabels: false,
           showUnselectedLabels: false,
+          type: BottomNavigationBarType.fixed,
           selectedItemColor: Colors.cyan,
           unselectedItemColor: const Color(0xFF526480),
           items: const [

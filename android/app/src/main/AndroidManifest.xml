@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.app_kgs">
    <application
-        android:label="app_kgs"
+        android:label="Tickit app"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
