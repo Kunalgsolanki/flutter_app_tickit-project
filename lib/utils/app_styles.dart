@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 Color Primary = Color(0xFF687daf);
 
-class styles {
+class Kgs {
   static Color primaryColor = Primary;
-  static Color textcolor = const Color(0xFF3b3b);
-  static Color bgColor = const Color(0xFFeedf2);
-  static Color orangeColor = const Color(0xFF526799);
+  static Color textcolor =  Color(0xFF3b3b);
+  static Color bgColor = Color.fromARGB(15, 48, 37, 40);
+  static Color orangeColor =  Color(0xFF526799);
   static TextStyle textStyle =
       TextStyle(fontSize: 16, color: textcolor, fontWeight: FontWeight.w500);
 
